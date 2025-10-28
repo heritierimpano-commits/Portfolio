@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Heritier— Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name — developer, designer, maker." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto;line-height:1.5;background:linear-gradient(180deg,#071021, var(--bg));color:#e6eef8}
+    .container{max-width:1000px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:grid;place-items:center;font-weight:700}
+    nav{display:flex;gap:14px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center;padding:28px 0}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h1{margin:0 0 8px;font-size:32px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:#041022;text-decoration:none;font-weight:700}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+    .proj{padding:14px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:700}
+    footer{padding:28px 0;color:var(--muted);font-size:14px}
+    .socials a{margin-right:10px;color:var(--muted);text-decoration:none}
+    /* responsive */
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.logo .mark{width:44px;height:44px}.hero aside{order:2}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">YN</div>
+        <div>
+          <div style="font-weight:800">Manzi Heritier</div>
+          <div style="font-size:12px;color:var(--muted)">Developer • Designer • Maker</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <main class="card">
+        <h1>Hi — I’m <span style="color:var(--accent)">Manzi Heritier</span></h1>
+        <p class="lead">I build web apps and delightful interfaces. I care about performance, accessibility, and beautiful UX. Below are a few projects I’ve shipped.</p>
+        <a class="cta" href="#projects">See projects</a>
+
+        <div id="projects" style="margin-top:18px">
+          <h3 style="margin:10px 0">Featured projects</h3>
+          <div class="projects">
+            <article class="proj">
+              <h4>Project Alpha</h4>
+              <p class="muted" style="color:var(--muted);margin:6px 0 10px">A short description of the project — tech used: React, Node.js, PostgreSQL.</p>
+              <a href="#" style="font-weight:700;color:var(--accent);text-decoration:none">Live →</a>
+            </article>
+
+            <article class="proj">
+              <h4>Project Beta</h4>
+              <p class="muted" style="color:var(--muted);margin:6px 0 10px">A short description — a design system and static site generator.</p>
+              <a href="#" style="font-weight:700;color:var(--accent);text-decoration:none">Code →</a>
+            </article>
+
+            <article class="proj">
+              <h4>Project Gamma</h4>
+              <p class="muted" style="color:var(--muted);margin:6px 0 10px">Mobile-friendly analytics dashboard.</p>
+              <a href="#" style="font-weight:700;color:var(--accent);text-decoration:none">Details →</a>
+            </article>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h3 style="margin:8px 0">Skills</h3>
+          <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">SQL</span>
+          </div>
+        </div>
+      </main>
+
+      <aside class="card">
+        <img src="515166754_1293445672351212_2595367521997629847_n.jpg" style="width:100%;border-radius:8px;display:block;margin-bottom:12px">
+        <h3 style="margin:0 0 6px">About me</h3>
+        <p class="lead" style="margin:0 0 12px">I’m a product-minded developer who likes building things people enjoy using. I’m based in Kamonyi.</p>
+        <div style="display:flex;gap:8px">
+          <a class="cta" href="mailto:your.email@example.com">Email me</a>
+          <a href="#contact" style="align-self:center;color:var(--muted);font-weight:700;text-decoration:none">Contact</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" style="margin-top:18px" class="card">
+      <h2 style="margin-top:0">More about me</h2>
+      <p style="color:var(--muted)">I enjoy building web apps. When I’m not coding I like photography and playing football.</p>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Contact</h2>
+      <p style="color:var(--muted)">Want to work together? Email <a href="heritierimpano@gamil.com" style="color:var(--accent);text-decoration:none">heritierimpano@gamil.com</a> or connect on social.</p>
+      <div style="margin-top:8px" class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© <span id="year"></span>Manzi Heritier</div>
+        <div style="color:var(--muted)">Built with  — my Brain</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.startsWith('#')){
+          const el = document.querySelector(href);
+          if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}
+        }
+      })
+    })
+  </script>
+</body>
+</html>
